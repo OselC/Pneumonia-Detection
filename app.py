@@ -117,6 +117,6 @@ if uploaded_file is not None:
         st.error("❌ Error while processing the image")
         st.code(traceback.format_exc())
 
-st.caption(
-    "⚠️ Disclaimer: This application is for educational purposes only and must not be used for medical diagnosis."
-)
+    st.caption(
+        "⚠️ Disclaimer: This application is for educational purposes only and must not be used for medical diagnosis."
+    )
