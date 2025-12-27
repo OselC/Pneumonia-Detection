@@ -112,11 +112,11 @@ if uploaded_file is not None:
             # Confidence bar
             st.markdown("### Confidence Level")
             st.progress(int(round(confidence * 100)))
+            st.caption(
+            "⚠️ Disclaimer: This application is for educational purposes only and " \
+            "must not be used for medical diagnosis."
+            )   
 
     except Exception as e:
         st.error("❌ Error while processing the image")
         st.code(traceback.format_exc())
-
-    st.caption(
-        "⚠️ Disclaimer: This application is for educational purposes only and must not be used for medical diagnosis."
-    )
